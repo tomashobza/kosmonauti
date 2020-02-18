@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+    <div id="popup">
+        Zadejte informace o kosmonautovi:<br>
+        <input type='text' id='firstname' placeholder="Jméno...">
+        <input type='text' id='surname' placeholder="Příjmení...">
+        <input type='date' id='birth'> 
+        <input type='text' id='power' placeholder="Superschopnost...">
+        <div>
+            <button onclick="addOne(event)">Poslat</button>
+            <button onclick="closePopup(event)">Zrušit</button>
+        </div>   
+    </div>
+    <div id="flexer">
+        <div id="container">
+            <h2>Kosmonauti</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis risus.
+                Integer tempor. Sed elit dui, pellentesque a, faucibus vel, interdum nec, diam.
+                Praesent vitae arcu tempor neque lacinia pretium. Fusce nibh. Nullam rhoncus aliquam metus.
+                In sem justo, commodo ut, suscipit at, pharetra vitae, orci.
+            </p>
+            <div id="button">
+                <p>
+                    Přidat kosmonauta, I guess:<br>
+                    <button id='send'>Button</button>
+                </p>
+            </div>
+            <table id='myTable'>
+                <tr>
+                    <th class='bg'>id</th>
+                    <th>Jméno</th>
+                    <th>Příjmení</th>
+                    <th>Datum narození</th>
+                    <th colspan="2">Superschopnost</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
