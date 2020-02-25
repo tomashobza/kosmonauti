@@ -3,8 +3,7 @@ const load = () => {
         .then(
             response => {
                 if (response.status !== 200) {
-                    console.log('Looks like there was a problem. Status Code: ' +
-                        response.status);
+                    console.log(`Looks like there was a problem. Status Code: ${response.status}`);
                     return;
                 }
                 response.json().then(data => {
@@ -21,7 +20,9 @@ const load = () => {
         });
 }
 
-document.addEventListener('load', load());
+document.addEventListener('readystatechange', event => { 
+    if (event.target.readyState === "interactive") load();
+});
 
 document.querySelector('#send').addEventListener('click', () => document.querySelector('#popup').style.display = "flex");
 
