@@ -10,12 +10,12 @@
         Zadejte informace o kosmonautovi:<br>
         <input type='text' id='firstname' placeholder="Jméno...">
         <input type='text' id='surname' placeholder="Příjmení...">
-        <input type='date' id='birth'> 
+        <input type='date' id='birth'>
         <input type='text' id='power' placeholder="Superschopnost...">
         <div>
-            <button onclick="addOne(event)">Poslat</button>
-            <button onclick="closePopup(event)">Zrušit</button>
-        </div>   
+            <button onclick="addCosmonaut(event)">Poslat</button>
+            <button onclick="closePopup()">Zrušit</button>
+        </div>
     </div>
     <div id="flexer">
         <div id="container">
@@ -33,13 +33,16 @@
                 </p>
             </div>
             <table id='myTable'>
-                <tr>
-                    <th class='bg'>id</th>
-                    <th>Jméno</th>
-                    <th>Příjmení</th>
-                    <th>Datum narození</th>
-                    <th colspan="2">Superschopnost</th>
-                </tr>
+                <thead>
+                    <tr>
+                        <th class='bg'>id</th>
+                        <th>Jméno</th>
+                        <th>Příjmení</th>
+                        <th>Datum narození</th>
+                        <th colspan="2">Superschopnost</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
             </table>
         </div>
     </div>

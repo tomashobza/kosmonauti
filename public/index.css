@@ -7,12 +7,12 @@ body {
     display: none;
 }
 
-.nope {
+.empty {
     border: 2px red solid;
     background: rgb(255, 191, 191);
 }
 
-.yope {
+.alright {
     border: 2px rgb(0, 226, 0) solid;
     background: rgb(202, 255, 191);
 }
@@ -29,7 +29,7 @@ div#popup{
     background: white;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 0px 10px 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.418);
     display: none;
     flex-direction: column;
     justify-content: space-around;
